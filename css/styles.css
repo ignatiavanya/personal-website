@@ -37,6 +37,7 @@ button:hover {
 a {
     text-decoration: none;
     color: gray;
+    font-size: 20px;
 }
 
 .text:hover {
@@ -48,3 +49,95 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+  
+  section {
+    display: flex;
+  }
+
+  html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: purple;
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+  }
+
+  
+
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: gainsboro;
+  }
+  
+  .footer {
+    background: #E0BBE4;
+  }
+  
+  
+  .aside-1 {
+    background: grey;
+  }
+  .aside-2 {
+    background: hotpink;
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .aside-1 { order: 1; } 
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  body {
+    padding: 2em; 
+  }
+
+  image {
+      align-items: center;
+  }
+
+  span {
+      text-decoration: underline;
+  }
